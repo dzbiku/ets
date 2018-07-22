@@ -12,7 +12,8 @@ namespace ETS.Model
         private static readonly Dictionary<string, string> DateDictionary = new Dictionary<string, string>()
         {
             { "dd-MM-yyyy HH:mm:ss", "dd-mm-yyyy hh24:mi:ss"},
-            { "dd-MM-yyyy", "dd-mm-yyyy"}
+            { "dd-MM-yyyy", "dd-mm-yyyy"},
+            { "","NoneFormating"}
         };
         public OrmDateHelpers(string dateFormatNet)
         {
