@@ -8,7 +8,6 @@ namespace ETS.Model.CSV
 {
     public class Reader
     {
-        //read from csv
         /// <summary>
         ///  Method fro convert from csv file to datatable.
         /// </summary>

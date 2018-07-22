@@ -9,7 +9,14 @@ namespace ETS.Model.CSV
     {
         public string[] Header { get; set; }
         public List<string[]> Content { get; set; }
+        
 
+        #region convert to other types of data
+
+        /// <summary>
+        /// Converrt to DataTable object from model
+        /// </summary>
+        /// <returns></returns>
         public DataTable ToDataTable()
         {
             DataTable dtResult = new DataTable();
@@ -17,19 +24,18 @@ namespace ETS.Model.CSV
             {
                 dtResult.Columns.Add(headerCell);
             }
-
-            
-            for (int j = 0; j < Content.Count; j++)
+            foreach (var contentRow in Content)
             {
                 DataRow dr = dtResult.NewRow();
                 for (int i = 0; i < Header.Length; i++)
                 {
-                    dr[i] = Content[j][i];
+                    dr[i] = contentRow[i];
                 }
                 dtResult.Rows.Add(dr);
             }
-
             return dtResult;
         }
+
+        #endregion
     }
 }
