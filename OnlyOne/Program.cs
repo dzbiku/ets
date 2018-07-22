@@ -1,6 +1,7 @@
 ﻿using System;
 using OnlyOne.Model;
 using OnlyOne.Model.CSV;
+using OnlyOne.Model.Weather;
 
 namespace OnlyOne
 {
@@ -12,7 +13,11 @@ namespace OnlyOne
 
             FileModel _file = new FileModel(@"C:\Users\OnlyOne\source\repos\dev_test\DaneDoWypelnienia\moc_dostarczona.csv");
             Csv csv = Reader.Read(_file, ';', true);
-            
+
+
+            WeatherApi apiMain = new WeatherApi();
+            string jsonFromWeb =apiMain.Call("Wroclaw","PL");
+            var Weather = WeatherNow.FromJson(jsonFromWeb);
             Console.ReadLine();
         }
     }

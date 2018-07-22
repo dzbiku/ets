@@ -126,23 +126,9 @@ namespace OnlyOne.Model.Weather
 
     public partial class WeatherNow
     {
-        public static WeatherNow FromJson(string json) => JsonConvert.DeserializeObject<WeatherNow>(json);
-    }
-
-    public static class Serialize
-    {
-        public static string ToJson(this WeatherNow self) => JsonConvert.SerializeObject(self);
-    }
-
-    internal static class Converter
-    {
-        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
+        public static WeatherNow FromJson(string json)
         {
-            MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
-            DateParseHandling = DateParseHandling.None,
-            Converters = {
-                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
-            },
-        };
+            return JsonConvert.DeserializeObject<WeatherNow>(json);
+        }
     }
 }
