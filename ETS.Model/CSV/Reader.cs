@@ -16,7 +16,7 @@ namespace ETS.Model.CSV
         /// <param name="separator"> You must select separator: ';' or ','</param>
         /// <param name="quotation"> if in string is "field_name" set true</param>
         /// <returns></returns>
-        public static Csv ConvertToDataTable(FileModel fModel, char separator, bool quotation = false)
+        public static Csv Read(FileModel fModel, char separator, bool quotation = false)
         {
             Csv csv = new Csv();
             using (StreamReader sr = new StreamReader(fModel.FullPathWithFileNameAndDir))

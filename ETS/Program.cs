@@ -12,7 +12,7 @@ namespace ETS
             Console.WriteLine("Hello World!");
 
             FileModel _file = new FileModel(@"");
-            Csv dataTableAfterConver = Reader.ConvertToDataTable(_file, ';', true);
+            Csv csv = Reader.Read(_file, ';', true);
             
             Console.ReadLine();
         }
