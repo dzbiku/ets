@@ -10,7 +10,7 @@ namespace OnlyOne.Model.Weather
         private string HtmlAddress { get; } = "http://api.openweathermap.org/data/2.5/weather?q=";
 
 
-        public string Call(string city, string countryCode = "")
+        public string Call(string city, string countryCode = "PL")
         {
             CityName = city;
             CountryCode = countryCode;

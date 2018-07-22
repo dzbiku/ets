@@ -16,7 +16,7 @@ namespace OnlyOne
 
 
             WeatherApi apiMain = new WeatherApi();
-            string jsonFromWeb =apiMain.Call("Wroclaw","PL");
+            string jsonFromWeb =apiMain.Call("Wroclaw");
             var Weather = WeatherNow.FromJson(jsonFromWeb);
             Console.ReadLine();
         }
