@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+﻿using Newtonsoft.Json;
 
-namespace OnlyOne.Model.Weather
+namespace OnlyOne.Weather.Weather
 {
     public partial class WeatherNow
     {

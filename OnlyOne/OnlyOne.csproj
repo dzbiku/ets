@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnlyOne.Model\OnlyOne.Model.csproj" />
+    <ProjectReference Include="..\OnlyOne.Weather\OnlyOne.Weather.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 ﻿using System;
 using OnlyOne.Model;
 using OnlyOne.Model.CSV;
-using OnlyOne.Model.Weather;
+using OnlyOne.Weather.Weather;
 
 namespace OnlyOne
 {

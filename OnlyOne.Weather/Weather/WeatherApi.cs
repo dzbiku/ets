@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace OnlyOne.Model.Weather
+namespace OnlyOne.Weather.Weather
 {
     public class WeatherApi
     {
