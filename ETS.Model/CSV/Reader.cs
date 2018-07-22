@@ -36,11 +36,12 @@ namespace ETS.Model.CSV
                 while (!sr.EndOfStream)
                 {
                     string[] contentRows = sr.ReadLine()?.Split(separator);
-                    for (var i = 0; i < contentRows.Length; i++)
-                    {
-                       // var contentRow = contentRows[i];
-                        contentRows[i] = quotation ? contentRows[i].Replace("\"", "") : contentRows[i];
-                    }
+                    if (contentRows != null)
+                        for (var i = 0; i < contentRows.Length; i++)
+                        {
+                            contentRows[i] = quotation ? contentRows[i].Replace("\"", "") : contentRows[i];
+                        }
+
                     csv.Content.Add(contentRows);
                 }
             }
