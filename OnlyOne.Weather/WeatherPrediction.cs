@@ -1,4 +1,4 @@
-﻿namespace OnlyOne.Weather.Weather
+﻿namespace OnlyOne.Weather
 {
     class WeatherPrediction
     {

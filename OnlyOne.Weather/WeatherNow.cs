@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace OnlyOne.Weather.Weather
+namespace OnlyOne.Weather
 {
     public partial class WeatherNow
     {
