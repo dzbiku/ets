@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
-namespace ETS.Model.CSV
+namespace OnlyOne.Model.CSV
 {
     public class Csv
     {

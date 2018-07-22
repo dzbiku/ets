@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ETS.Model\ETS.Model.csproj" />
+    <ProjectReference Include="..\ETS.Model\OnlyOne.Model.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Data;
-using ETS.Model;
-using ETS.Model.CSV;
+using OnlyOne.Model;
+using OnlyOne.Model.CSV;
 
-namespace ETS
+namespace OnlyOne
 {
     class Program
     {

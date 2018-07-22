@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ETS.Model.CSV
+﻿namespace OnlyOne.Model.CSV
 {
     class Saver
     {
