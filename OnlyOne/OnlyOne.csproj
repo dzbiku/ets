@@ -3,11 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <StartupObject>OnlyOne.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\OnlyOne.Camera\OnlyOne.Camera.csproj" />
     <ProjectReference Include="..\OnlyOne.Model\OnlyOne.Model.csproj" />
+    <ProjectReference Include="..\OnlyOne.RPI\OnlyOne.RPI.csproj" />
     <ProjectReference Include="..\OnlyOne.Weather\OnlyOne.Weather.csproj" />
   </ItemGroup>
 

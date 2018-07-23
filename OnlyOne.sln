@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlyOne.Model", "OnlyOne.Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlyOne.Weather", "OnlyOne.Weather\OnlyOne.Weather.csproj", "{9B5C2457-476A-495B-93CF-80B55CA8C7A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlyOne.Camera", "OnlyOne.Camera\OnlyOne.Camera.csproj", "{8D2727F9-9BA1-499D-8A23-04BCF0E9E259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlyOne.Camera", "OnlyOne.Camera\OnlyOne.Camera.csproj", "{8D2727F9-9BA1-499D-8A23-04BCF0E9E259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlyOne.RPI", "OnlyOne.RPI\OnlyOne.RPI.csproj", "{914146AF-F316-4E77-AFB4-D80DA37767A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8D2727F9-9BA1-499D-8A23-04BCF0E9E259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D2727F9-9BA1-499D-8A23-04BCF0E9E259}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D2727F9-9BA1-499D-8A23-04BCF0E9E259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914146AF-F316-4E77-AFB4-D80DA37767A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914146AF-F316-4E77-AFB4-D80DA37767A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914146AF-F316-4E77-AFB4-D80DA37767A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914146AF-F316-4E77-AFB4-D80DA37767A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
