@@ -6,12 +6,23 @@ namespace OnlyOne.Weather
     {
         public string CityName { get; set; }
         public string CountryCode { get; set; }
-        private string ApiKey { get; } = "9817b68be1114bce73d71d5678d36925";
+        private string ApiKey { get; set; }
         private string HtmlAddress { get; } = "http://api.openweathermap.org/data/2.5/weather?q=";
         private string FullHtml { get; set; }
         private string FullJson { get; set; }
         public WeatherNow WeatherNow { get; set; }
 
+
+        public void SetApiKey(string apiKey)
+        {
+            ApiKey = apiKey;
+        }
+
+        /// <summary>
+        /// Call api- but remember, first you must set yout api key using SetApiKey() method
+        /// </summary>
+        /// <param name="city">City</param>
+        /// <param name="countryCode">e.g PL, DE, US, etc.</param>
         public void Call(string city, string countryCode = "PL")
         {
             CityName = city;
