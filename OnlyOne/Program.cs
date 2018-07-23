@@ -1,7 +1,8 @@
 ﻿using System;
+using OnlyOne.Camera;
 using OnlyOne.Model;
 using OnlyOne.Model.CSV;
-using OnlyOne.Weather.Weather;
+using OnlyOne.Weather;
 
 namespace OnlyOne
 {
@@ -16,7 +17,13 @@ namespace OnlyOne
 
 
             WeatherApi apiMain = new WeatherApi();
+            apiMain.SetApiKey("9817b68be1114bce73d71d5678d36925");
             apiMain.Call("Wroclaw");
+
+            VideoTools vdtools = new VideoTools();
+            vdtools.Capture();
+            //vdtools.Save();
+
             Console.ReadLine();
         }
     }
