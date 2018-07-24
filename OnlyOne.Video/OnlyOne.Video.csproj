@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EmguCV" Version="3.1.0.1" />
+    <PackageReference Include="OpenCvSharp3-AnyCPU" Version="3.4.1.20180319" />
   </ItemGroup>
 
 </Project>
