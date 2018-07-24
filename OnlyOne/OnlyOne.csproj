@@ -7,8 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="publish\**" />
+    <EmbeddedResource Remove="publish\**" />
+    <None Remove="publish\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\OnlyOne.Model\OnlyOne.Model.csproj" />
     <ProjectReference Include="..\OnlyOne.RPI\OnlyOne.RPI.csproj" />
+    <ProjectReference Include="..\OnlyOne.Video\OnlyOne.Video.csproj" />
     <ProjectReference Include="..\OnlyOne.Weather\OnlyOne.Weather.csproj" />
   </ItemGroup>
 

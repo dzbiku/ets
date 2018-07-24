@@ -21,8 +21,12 @@ namespace OnlyOne
             //apiMain.Call("Wroclaw");
 
             Console.WriteLine("Test capture....");
-            Test tst = new Test();
-            tst.TestCaptureImage();
+            //Test tst = new Test();
+            //tst.TestCaptureImage();
+
+            Video.Video vd = new Video.Video();
+            //vd.Capture();
+            vd.testedtest();
 
 
             Console.ReadLine();

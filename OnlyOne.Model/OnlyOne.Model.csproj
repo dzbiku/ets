@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="publish\**" />
+    <EmbeddedResource Remove="publish\**" />
+    <None Remove="publish\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Security.Permissions" Version="4.5.0" />
   </ItemGroup>
 
