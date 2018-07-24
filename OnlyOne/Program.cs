@@ -1,5 +1,4 @@
 ﻿using System;
-using OnlyOne.Camera;
 using OnlyOne.Model;
 using OnlyOne.Model.CSV;
 using OnlyOne.RPI;
