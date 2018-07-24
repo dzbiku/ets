@@ -6,6 +6,9 @@ namespace OnlyOne.RPI
 {
     public class Test
     {
+        /// <summary>
+        /// For build in camera- dedicated, not for usb camera. 
+        /// </summary>
         public void TestCaptureImage()
         {
             var pictureBytes = Pi.Camera.CaptureImageJpeg(640, 480);
